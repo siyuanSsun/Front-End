@@ -1,0 +1,33 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-align: center
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 2rem
+}
+
+ul {
+    text-align: center;
+    list-style: none
+}
+
+img {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px
+}
+
+h2 {
+    color: #8EE5EE;
+    font-weight: bold;
+    font-size: 1.5rem
+}
+
+p {
+    color: black;
+    font-weight: bold
+}
