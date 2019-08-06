@@ -1,16 +1,17 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto';
     font-size: 15px;
-    text-align: center
 }
 
 h1 {
     font-weight: bolder;
-    font-size: 2rem
+    font-size: 2rem;
+    color: white;
+    background-position: center;
+    background-color: #bdc3c7;
 }
 
 ul {
-    text-align: center;
     list-style: none
 }
 
@@ -30,4 +31,30 @@ h2 {
 p {
     color: black;
     font-weight: bold
+}
+
+a {
+    color: lightgreen;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+a:link {
+    color: lightgreen;
+}
+
+a:visited {
+    color: lightgreen;
+}
+
+a:focus {
+    background-color: cadetblue;
+}
+
+a:hover {
+    background: #8EE5EE;
+}
+
+a:active {
+    background-color: aquamarine;
 }

@@ -1,0 +1,42 @@
+#resume-title {
+    text-align: center;
+    height: 55em;
+    float: left;
+    width: 20%;
+    color: white;
+    background-color: aquamarine;
+}
+
+h1 {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+#resume-body {
+    float: right;
+    width: 78%;
+    height: 100%;
+    
+}
+
+ul {
+    padding-inline-start: 0em;
+    list-style: none;
+}
+
+li {
+    padding-inline-start: 0em;
+}
+
+.entry {
+    float: left;
+    width: 20%;
+}
+
+.clear {
+    clear: both;
+}
+
+.title {
+    font-weight: bold;
+}

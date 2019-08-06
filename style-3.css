@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+  }
+
+#resume-title {
+    background-color: grey;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    margin: 0%;
+    margin-inline-start: 0.70em;
+}
+
+.theme {
+    margin: 0%;
+    float: left;
+    width: 10%;
+    height: 100px;
+    font-size: 16px;
+    text-align: center;
+    background-color: lightgrey;
+    border: 1px solid white;
+}
+
+.theme-content {
+
+    border: 1px solid grey;
+    float: left;
+    width: 90%;
+    height: 100px;
+    
+}
+
+.entry {
+    float: left;
+    width: 20%;
+}
+
+.title {
+    font-weight: bold;
+    float: left;
+    width: 10%;
+}
+
+.title-content {
+    float: left;
+    width: 90%;
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    padding-inline-start: 0em;
+    list-style: none;
+}
+
+li {
+    padding-inline-start: 0em;
+}
