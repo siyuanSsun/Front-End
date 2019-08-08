@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: #333333;
+}
+
+#title {
+    width: 960px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+}
+
+#logo {
+    width:80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    flex: 80px;
+}
+
+nav {
+    text-align: right;
+    font-size: 14px;
+    flex: 880px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+
+#banner {
+    width:100%;
+    height: 350px;
+    background-color: #66bb33;
+}
+
+#banner-box {
+    width: 960px;
+    height:350px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#banner-id {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#banner-id div {
+    background: #b2dd99;
+    border: 0.5px solid black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+#banner-id #selected-banner {
+    padding-top: 30px;
+    height: 70px;
+    background: #e0f1d6
+}
+
+#nav {
+    border-bottom: 0.5px solid rgb(200, 200, 200);
+    width: 100%;
+    height: 80px;;
+    position: relative;
+}
+
+#nav-box {
+    margin: 0 auto;
+    position: absolute;
+    width: 960px;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    bottom: -0.5px;
+    left: calc( (100% - 960px) / 2);
+}
+
+#nav-box div {
+    background-color: #eeeeee;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    border: 0.5px solid rgb(200, 200, 200);
+    border-width: 0.5px 0.5px 0.5px 0.5px;
+}
+
+#nav-box #selected-nav {
+    background-color: white;
+    border-width: 0.5px 0.5px 0px 0.5px;
+}
+
+
+#content {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content div {
+    text-align: center;
+    font-size: 14px;
+    padding: 80px;
+    border: 0.5px solid rgb(200, 200, 200);
+    margin: 6px 6px 0px 0px;
+    flex-grow: 1;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #555555;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#info {
+    color: white;
+    padding-top: 5px;
+}
