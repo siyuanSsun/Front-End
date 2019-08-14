@@ -1,0 +1,602 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.title {
+    font-size: 42px;
+}
+
+#welcome {
+    width: 100%;
+    background-image: url('../slices/bg-01.png');
+    background-size: cover;
+}
+
+.dim {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.6);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome .box {
+    margin-left: calc((100% - 970px) / 2);
+    margin-right: calc((100% - 970px) / 2);
+    font-weight: lighter;
+}
+
+#hello-world {
+    margin-top: 200px;
+    font-size: 62px; 
+}
+
+#welcome-descr {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding: 40px;
+    margin: 30px;
+    color: rgb(200, 200, 200);
+}
+
+#account-create {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 210px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 2px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#account-create form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#account-create form input:nth-of-type(1), input:nth-of-type(2) {
+    width: 260px;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0.5px rgb(200, 200, 200) solid;
+    border-radius: 2px;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+}
+
+#account-create form input:nth-of-type(3) {
+    width: 125px;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+}
+
+#sign-box {
+    margin: 20px;
+}
+
+#sign-box div {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+#sign-box div:nth-of-type(1) {
+    font-size: 16px;
+}
+
+#sign-box div:nth-of-type(2) {
+    font-size: 12px;
+}
+
+#first-page {
+    font-weight: lighter;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fp-head {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#fp-title {
+    font-size: 42px;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+#feature-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.feature {
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px;
+}
+
+.feature .icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.feature .detail {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.icon img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#feature-box .title {
+    text-align: left;
+    font-size: 20px;
+    width: 365px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#feature-box .description {
+    text-align: left;
+    font-size: 16px;
+    width: 365px;
+}
+
+
+#second-page {
+    font-weight: lighter;
+    width: 100%;
+    background-image: url("../slices/bg-02.png");
+    background-size: cover;
+}
+
+#second-page .dim {
+
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.6);
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+#left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 520px;
+    color: rgb(200, 200, 200);
+    margin-left: 250px;
+}
+
+#left-col .title {
+    font-size: 42px;
+    text-align: left;
+    width: 360px;
+    margin: 10px 0px;
+}
+
+#left-col .description {
+    font-size: 18px;
+    width: 360px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#left-col .button-box button {
+    width: 200px;
+    height: 50px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#left-col .button-box button:nth-of-type(1) {
+    background-color: white;
+    border-style: none;
+    border-radius: 2px;
+}
+
+#left-col .button-box button:nth-of-type(2) {
+    background-color: transparent;
+    border: 0.5px rgb(200, 200, 200) solid;
+    border-radius: 2px;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+}
+
+#right-col {
+    text-align: center;
+    overflow: hidden;
+}
+
+#right-col img {
+    vertical-align: middle;
+    position: relative;
+    left: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#third-page {
+    width: 100%;
+    border: 1px rgba(200, 200, 200, 0.3) solid;
+    border-width: 0px 0px 1px 0px;
+    font-weight: lighter;
+}
+
+#third-page .title {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+#third-page .product-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.product .icon {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.product .icon img {
+    vertical-align: middle;
+}
+
+.product {
+    width: 240px;
+    margin: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+#forth-page {
+    width: 100%;
+    border: 1px rgba(200, 200, 200, 0.3) solid;
+    border-width: 0px 0px 1px 0px;
+    font-weight: lighter;
+}
+#forth-page .box {
+    margin: 120px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#forth-page .box .detail {
+    width: 350px;
+    text-align: left;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.box .detail .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+.box .detail .description {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+#forth-page .box .img {
+    width: 560px;
+    height: 350px;
+    overflow: hidden;
+    margin: 30px;
+}
+
+#forth-page .box .img img {
+    position: relative;
+    bottom: 90px;
+}
+
+#fifth-page {
+    width: 100%;
+    border: 1px rgba(200, 200, 200, 0.3) solid;
+    border-width: 0px 0px 1px 0px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#fifth-page .title {
+    margin-top: 80px;
+    margin-bottom: 5px;
+}
+
+#fifth-page .description {
+    width: 710px;
+    margin: 5px auto;
+}
+
+.crew-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.crew {
+    width: 470px;
+    height: 350px;
+    overflow: hidden;
+    margin: 50px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.crew .profile {
+    position: relative;
+    bottom: 20px;
+    right: 5px;
+}
+
+.crew .crew-info {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    z-index: 1;
+    letter-spacing: 2px;
+    background-color: rgba(50, 50, 50, 0.6);
+    display: none;
+}
+
+
+
+.crew:hover .crew-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.crew .job {
+    margin: 15px;
+}
+
+.crew .name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 5px 0;
+}
+
+.crew .role {
+    font-size: 12px;
+    color: white;
+    margin: 5px 0;
+}
+
+.crew .contact {
+    display: flex;
+    justify-content: center;
+}
+
+.crew .contact div {
+    width: 50px;
+    height: 50px;
+    border: 0.5px rgb(200, 200, 200) solid;
+    border-radius: 25px;
+    line-height: 50px;
+    text-align: center;
+    margin: 15px;
+}
+
+.crew .contact img {
+    vertical-align: middle;
+}
+
+#sixth-page {
+    display: flex;
+    justify-content: center;
+}
+
+#sixth-page .left-col{
+    width: 470px;
+    height: 560px;
+    border: 0.5px rgb(200, 200, 200) solid;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    margin: 60px 0;
+}
+
+.left-col .title {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(100, 100, 100);
+    margin: 25px 0;
+}
+#six-page form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#sixth-page .left-col input {
+    width: 360px;
+    border: 0.5px rgb(200, 200, 200) solid;
+    border-radius: 2px;
+    margin: 10px auto;
+    padding-left: 10px;
+    flex-grow: 1;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#sixth-page form input:nth-child(1), input:nth-child(2) , input:nth-child(4){
+    height: 50px;
+    color: rgb(200, 200, 200);
+}
+
+#sixth-page form input:last-child {
+    border-style: none;
+    background-color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#sixth-page textarea {
+    width: 360px;
+    height: 150px;
+    margin: 10px auto;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 0.5px rgb(200, 200, 200) solid;
+    border-radius: 2px;
+    resize: none;
+    color: rgb(200, 200, 200);
+    letter-spacing: 1px;
+}
+
+#sixth-page textarea::-webkit-input-placeholder {
+    color: rgb(150, 150, 150);
+    letter-spacing: 1px;
+}
+
+#sixth-page .right-col {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 130px;
+}
+
+#sixth-page .right-col .description {
+    margin: 40px 0;
+    color: rgb(200, 200, 200);
+}
+
+#sixth-page .right-col .contact {
+    display: flex;
+    margin: 10px 0;
+    height: 50px;
+    font-weight: bold;
+}
+
+#sixth-page .right-col .contact .icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    margin: auto 0;
+
+    margin-right: 10px;
+}
+
+#sixth-page .right-col .contact .img {
+    vertical-align: middle;
+}
+
+#sixth-page .right-col .contact .detail {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+}
+
+#sixth-page .right-col .contact .detail div{
+    width: 300px;
+    height: 25px;
+    line-height: 25px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+footer .subject {
+    width: 270px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+footer .subject div {
+    font-size: 16px;
+    color: rgb(130, 130, 130);
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+footer .subject .title {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;  
+    
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media .icon {
+    margin-right: 25px;
+}
