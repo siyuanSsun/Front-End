@@ -98,6 +98,7 @@ function keyEvent(e) {
 
     if (e.keyCode == 13) {
         Select(selected % valEmailNum, true);
+        email_list.style.display = "none";
     }
 
     if (e.keyCode == 27) {
