@@ -15,7 +15,7 @@ var selected = 0;
 var spareEmail = document.querySelectorAll("li");
 
 // reg match email postfix, if no match, show all
-const emailReg = /(\w+)@([\w/.]*)/;
+const emailReg = /(\w*)@([\w/.]*)/;
 function matchEmail(e) {
     email_list.style.display = "block";
 
