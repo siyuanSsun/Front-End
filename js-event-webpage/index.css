@@ -1,0 +1,10 @@
+select {
+    display: none;
+}
+
+#gif-box {
+    background-image: url("../js-event-webpage/erik_ce204002.jpg");
+    background-position: 0px 480px;
+    width: 480px;
+    height: 480px;
+}
