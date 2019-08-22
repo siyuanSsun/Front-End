@@ -14,6 +14,16 @@
                 <label id="region-label">Region</label>
             </div>
         </div>
+
+        <div id="chart-wrapper">
+            <div>
+            <canvas id="linechart-hover" width="400", height="200"></canvas>
+            </div>
+            <div>
+            <canvas id="linechart-select" width="400", height="200"></canvas>
+            </div>
+        
+        </div>
         
         <div id="table-wrapper">
                 <table id="sale-table">
@@ -32,8 +42,8 @@
                         <th>Oct</th>
                         <th>Nov</th>
                         <th>Dec</th>
-                    </thead>
                 </tr>
+                </table>
         </div>
 
         <div id="visual-wrapper">
@@ -42,7 +52,9 @@
 
         <script type="text/javascript" src="table.js"></script>
         <script type="text/javascript" src="./checkbox.js"></script>
-        <script type="text/javascript" src="./app.js"></script>
 
+        <script type="text/javascript" src="./graph.js"></script>
+        <script type="text/javascript" src="./draw.js"></script>
+        <script type="text/javascript" src="./app.js"></script>
     </body>
 </html>
