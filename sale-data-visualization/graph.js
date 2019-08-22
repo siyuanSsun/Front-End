@@ -21,7 +21,7 @@ class lineChart{
         
     }
 
-    setAxis(xMax=100, yMax=100, xoffSet=5, yoffSet=5, lineWidth=2) {
+    setAxis(xMax=100, yMax=100, xoffSet=5, yoffSet=5, lineWidth=1) {
         this.xMax = xMax;
         this.yMax = yMax;
         this.ctx.lineWidth = lineWidth;
@@ -33,6 +33,7 @@ class lineChart{
         this.ctx.moveTo(this.startX, this.startY);
         this.ctx.lineTo(this.startX + xoffSet, this.startY + yoffSet);
 
+
         // x axis
         this.ctx.moveTo(this.startX, this.startY + this.height);
         this.ctx.lineTo(this.startX + this.width, this.startY + this.height);
@@ -43,10 +44,28 @@ class lineChart{
     
     }
 
-    loadData(data, pointR=3, xoffSet=20, yoffSet=20, color='black') {
+    loadData(data, pointR=3, xoffSet=20, yoffSet=20, color='black', steps=50, markW=4) {
         // Deal with data
         var pxSpace = (this.width - xoffSet) / this.xMax;
         var pySpace = (this.height - yoffSet) / this.yMax;
+
+        let overflow = false;
+        let markY = steps;
+
+        if (this.yMax - yoffSet < markY) {
+            overflow = true;
+        }
+
+        while(!overflow) {
+            var mark = new Path2D();
+            mark.moveTo(this.startX, this.startY + this.height - markY * pySpace);
+            mark.lineTo(this.startX + markW, this.startY + this.height - markY * pySpace);
+            markY += steps;
+            if (this.yMax - yoffSet < markY) {
+                overflow = true;
+            }
+            this.ctx.stroke(mark);
+        }
 
         var line = new Path2D();
         var lastX = this.startX + data[0].x * pxSpace
@@ -77,6 +96,10 @@ class lineChart{
         this.ctx.fillStyle = this.defaultColor;
         this.ctx.strokeStyle = this.defaultColor;
 
+    }
+
+    clear() {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
 
     setLabel(label) {
