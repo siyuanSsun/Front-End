@@ -36,12 +36,15 @@ let sourceData = [{
     sale: [10, 40, 10, 6, 5, 6, 8, 6, 6, 6, 7, 26]
 }];
 
-let table = document.querySelector("#sale-table");
+let table = document.getElementById("sale-table");
 let tableRows = [];
 
 let initData = function () {
     for (let i = 0; i < sourceData.length; i++) {
         let tr = document.createElement("tr");
+        tr.className = "data-row";
+        tr.addEventListener('mouseover', drawSingleLineChart);
+        tr.addEventListener('mouseleave', e => { drawAxis(singleLineChart); });
 
         let dataPiece = sourceData[i];
         let productCol = document.createElement("th");
@@ -63,7 +66,6 @@ let initData = function () {
 };
 
 let renderBasic = function(productArr, regionArr) {
-    console.log(productArr, regionArr);
     let index = 0;
     for (let data of sourceData) {
         if (productArr.includes(data.product) && regionArr.includes(data.region)) {
